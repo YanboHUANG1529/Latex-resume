@@ -1,0 +1,101 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+
+% ----------------------------------------------------
+% Preamble inspired by popular Overleaf resume templates
+% ----------------------------------------------------
+\usepackage{geometry}
+\geometry{left=1.6cm,right=1.6cm,top=1.6cm,bottom=1.6cm}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\sffamily}{\thesection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.2ex}{0.8ex}
+
+\setlist[itemize]{leftmargin=*,nosep}
+
+\newcommand{\resumeSection}[1]{\section*{#1}\vspace{-0.5em}\hrule\vspace{0.6em}}
+\newcommand{\resumeSubsection}[4]{
+  \textbf{#1} \hfill {#2}\\
+  \textit{#3} \hfill {#4}
+}
+\newcommand{\resumeItem}[1]{\item #1}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Xiaoyuan Zhang}}\\[4pt]
+  \href{tel:+8615568818289}{+86 155-6881-8289} $\vert$
+  \href{mailto:15568818289@163.com}{15568818289@163.com} $\vert$
+  Unit~29, Building~16, Yucui Haoting, Fanrong Road, Yatai Street,\\
+  Nanguan District, Changchun, Jilin Province, 130000\\[6pt]
+  \textit{Aspiring ESSEC Master in Luxury Management candidate passionate about bridging data-driven insights with premium brand storytelling.}
+\end{center}
+
+\vspace{0.5em}
+
+\resumeSection{Education}
+\resumeSubsection{Renmin University of China}{Suzhou, China}{Bachelor of Science in Finance}{Sep.~2022 -- Jul.~2026}
+\begin{itemize}
+  \resumeItem{GPA: 3.6/4.0; 985 \& 211 Projects university.}
+  \resumeItem{Relevant Coursework: Econometrics, Statistics, Application Methods and Data Analysis, Budget Control and Supply Chain, Management, Marketing, French.}
+\end{itemize}
+\vspace{0.4em}
+\resumeSubsection{KEDGE Business School}{Bordeaux, France}{Bachelor Exchange in Marketing}{Jun.~2024 -- Jun.~2025}
+\begin{itemize}
+  \resumeItem{GPA: 15.77/20.}
+  \resumeItem{Relevant Coursework: Luxury Marketing, Business Data Analysis, Marketing Strategy, Digital Marketing, Company Strategic Diagnosis, Simulated Operations and Management.}
+\end{itemize}
+
+\resumeSection{Professional Experience}
+\resumeSubsection{Budweiser InBev}{Shanghai, China}{Trade Marketing Intern}{Jun.~2025 -- Present}
+\begin{itemize}
+  \resumeItem{Streamlined store compliance standards, improving summer campaign compliance by 10\% and cutting customer complaints by 93\%.}
+  \resumeItem{Developed tiered incentives that drove sign-ups across 7M+ stores and lifted orders from 1.3M to 5.9M cases (\texttt{+78\%}).}
+  \resumeItem{Led data collection and analysis to guide resource allocation and ROI tracking for regional activations.}
+  \resumeItem{Built Power BI dashboards covering 70,000+ stores to enhance visibility for business units.}
+\end{itemize}
+\vspace{0.4em}
+\resumeSubsection{L'Or\'eal China}{Shanghai, China}{Employer Branding Intern}{Aug.~2024 -- Jun.~2025}
+\begin{itemize}
+  \resumeItem{Recruited a 16-member Employer Branding student team to amplify campus presence.}
+  \resumeItem{Organized four major events, secured three sponsorships, and delivered 30,000+ views via influencer collaborations, converting 18\% of attendees into follow-up events and adding 2,500+ potential applicants.}
+  \resumeItem{Managed recruitment platform accounts that achieved 29\% higher engagement than the previous top-performing team and 67\% above the cohort average.}
+\end{itemize}
+\vspace{0.4em}
+\resumeSubsection{DERMO IONIQ}{France}{Marketing Strategy Intern}{Dec.~2024 -- May~2025}
+\begin{itemize}
+  \resumeItem{Created customized product kits aligned to skin needs, raising website conversion by 20\%.}
+  \resumeItem{Launched an eco-friendly packaging initiative that cut production costs by 10\% while ensuring regulatory compliance.}
+  \resumeItem{Executed social media and live-stream campaigns reaching 20M+ consumers with 8\% engagement, boosting brand awareness.}
+\end{itemize}
+
+\resumeSection{Additional Leadership}
+\resumeSubsection{The 11th Art Troupe, Renmin University of China}{Suzhou, China}{Deputy Head}{Sep.~2023 -- Aug.~2024}
+\begin{itemize}
+  \resumeItem{Exceeded annual event targets by two through data-informed program design, including a lawn music festival and drama productions that increased participation by 20\% year-on-year across 2,000+ surveyed students.}
+  \resumeItem{Implemented standardized event SOPs and a cross-department resource pool, shortening preparation time by 30\%, reducing costs by 15\%, and generating 5,000+ engagements.}
+\end{itemize}
+
+\resumeSection{Skills \& Interests}
+\begin{itemize}[leftmargin=1.2em]
+  \resumeItem{\textbf{Languages:} Mandarin Chinese (Native), English (IELTS~6.5), French (B1).}
+  \resumeItem{\textbf{Technical:} Microsoft Office, Adobe Premiere, Adobe Photoshop, Canva, SPSS, R, Stata, SQL, SAS, Tableau, Power BI.}
+  \resumeItem{\textbf{Hobbies:} Piano, Table Tennis.}
+\end{itemize}
+
+\end{document}
